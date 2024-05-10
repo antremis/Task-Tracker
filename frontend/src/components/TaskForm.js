@@ -9,7 +9,7 @@ const TaskForm = () => {
   const [title, setTitle] = useState('')
   const [error, setError] = useState(null)
   const [emptyFields, setEmptyFields] = useState([])
-  const serverURL = process.env.PROD ? "www.google.com" : "http://127.0.0.1:5000"
+  const serverURL = process.env.PROD ? "https://task-tracker-8ew8.onrender.com" : "http://127.0.0.1:5000"
 
   const handleSubmit = async (e) => {
     e.preventDefault()

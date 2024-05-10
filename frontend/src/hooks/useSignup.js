@@ -5,7 +5,7 @@ export const useSignup = () => {
   const [error, setError] = useState(null)
   const [isLoading, setIsLoading] = useState(null)
   const { dispatch } = useAuthContext()
-  const serverURL = process.env.PROD ? "www.google.com" : "http://127.0.0.1:5000"
+  const serverURL = process.env.PROD ? "https://task-tracker-8ew8.onrender.com" : "http://127.0.0.1:5000"
 
   const signup = async (email, password) => {
     setIsLoading(true)

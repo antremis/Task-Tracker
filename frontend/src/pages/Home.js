@@ -8,7 +8,7 @@ import TaskForm from '../components/TaskForm'
 const Home = () => {
   const {tasks, dispatch} = useTasksContext()
   const {user} = useAuthContext()
-  const serverURL = process.env.PROD ? "www.google.com" : "http://127.0.0.1:5000"
+  const serverURL = process.env.PROD ? "https://task-tracker-8ew8.onrender.com" : "http://127.0.0.1:5000"
 
   useEffect(() => {
     const fetchTasks = async () => {
